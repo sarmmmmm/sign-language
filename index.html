@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Language Translator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="cute-font blue">Sign</span>
+            <span class="cute-font blue">-</span>
+            <span class="cute-font blue">Language</span>
+            <span style="margin-left: 10px; color: #757575; font-size: 16px; font-weight: normal;">(ASL)</span>
+        </div>
+    </header>
+
+    <main class="cute-translator-container">
+        
+        <div class="cute-card camera-card">
+            <div class="cute-card-header">
+                Sign Language (Camera)
+            </div>
+            <div class="camera-display-area">
+                <video id="webcam" autoplay playsinline></video>
+                <div id="loading-message">Camera is ready</div>
+            </div>
+            <div class="cute-card-footer">
+                <button id="camera-control-btn">Turn on Camera</button>
+            </div>
+        </div>
+
+        <div class="cute-card prediction-card">
+            <div class="cute-card-header">
+                English Meaning
+            </div>
+            <div class="result-display-area">
+                <div id="result-text">Meaning will appear here...</div>
+            </div>
+            <div class="cute-card-footer">
+                <button id="copy-result-btn">Copy Meaning</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
