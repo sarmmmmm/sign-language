@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <span class="cute-font blue">Sign</span>
+            <span class="cute-font blue">American Sign </span>
             <span class="cute-font blue">-</span>
             <span class="cute-font blue">Language</span>
             <span style="margin-left: 10px; color: #757575; font-size: 16px; font-weight: normal;">(ASL)</span>
@@ -21,14 +21,22 @@
         
         <div class="cute-card camera-card">
             <div class="cute-card-header">
-                Sign Language (Camera)
+                American Sign Language (ASL)
             </div>
-            <div class="camera-display-area">
-                <video id="webcam" autoplay playsinline></video>
-                <div id="loading-message">Camera is ready</div>
+           
+            <div class = "Image-preview-area">  
+
+                <img id="image-preview" src="" alt="Image Preview" style="display:none; max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+                <div id="image-info" style="display:none; margin-top:10px; text-align:center;">
+                     <p><strong>📁 ชื่อไฟล์:</strong> <span id="file-name">              </span></p>
+                    <p><strong>📊 ขนาด:</strong> <span id="file-size">                </span></p>
+                    <p><strong>🏷️ ประเภท:</strong> <span id="file-type">               </span></p>
+                </div>
             </div>
+
             <div class="cute-card-footer">
-                <button id="camera-control-btn">Turn on Camera</button>
+                <input type="file" id="Image_uploaded" accept="image/*", style="display:none;" > 
+                <button  id="file-control-btn">Uploaded </button>
             </div>
         </div>
 
@@ -40,7 +48,7 @@
                 <div id="result-text">Meaning will appear here...</div>
             </div>
             <div class="cute-card-footer">
-                <button id="copy-result-btn">Copy Meaning</button>
+                <button id="copy-result-btn">Copy </button>
             </div>
         </div>
     </main>

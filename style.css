@@ -102,7 +102,7 @@ header {
     background: #fafafa;
     border-top: 1px solid #f1f1f1;
     display: flex;
-    justify-content: flex-end; /* ปุ่มอยู่ทางขวา */
+    justify-content: center; /* ปุ่มอยู่ทางขวา */
 }
 
 button {
@@ -117,9 +117,14 @@ button {
     transition: background 0.2s; /* เอฟเฟกต์ smooth */
 }
 
+#file-control-btn {
+    background: #34a853; /* สีเขียวสำหรับปุ่มเปิดกล้อง */
+}
+
 button:hover {
     background: #3367d6; /* น้ำเงินเข้มขึ้นเมื่อเอาเมาส์วาง */
 }
+
 
 /* สำหรับหน้าจอมือถือ */
 @media (max-width: 600px) {
